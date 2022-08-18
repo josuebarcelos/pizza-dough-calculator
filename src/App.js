@@ -1,23 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
+import {RecipeComponent} from "./components/RecipeComponent";
+import BaseRecipe from "./model/recipe";
 
-function App() {
+const App = () => {
+    const recipe = new BaseRecipe()
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <p>Pizza Calculator</p>
       </header>
+        <RecipeComponent recipe={recipe} />
     </div>
   );
 }
