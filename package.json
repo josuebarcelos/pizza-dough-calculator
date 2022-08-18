@@ -2,7 +2,7 @@
   "name": "pizza-dough-calc",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://josuebarcelos.github.io",
+  "homepage": "https://josuebarcelos.github.io/pizza-dough-calculator",
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
