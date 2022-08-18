@@ -1,0 +1,25 @@
+.recipe {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  margin: 10px 10px 10px;
+}
+
+.recipe-property {
+  width: 100%;
+  margin: auto;
+}
+label {
+  padding: 10px;
+}
+
+.recipe-results {
+  width: 100%;
+  margin: auto;
+  padding: 10px;
+}
+
+.recipe-results > div {
+  padding: 10px;
+}
+
