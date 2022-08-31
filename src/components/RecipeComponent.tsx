@@ -21,6 +21,7 @@ export const RecipeComponent = ({recipe}) => {
     return (
         <>
             <div data-testid="recipe-component" className="recipe">
+                <p>Recipe Parameters</p>
                 <div data-testid="hydration" className="recipe-property">
                     <label>Hydration:</label>
                     {toPercentString(parameters.hydration, 0)}
