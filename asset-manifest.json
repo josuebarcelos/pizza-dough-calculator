@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/pizza-dough-calculator/static/css/main.6a0cbb55.css",
-    "main.js": "/pizza-dough-calculator/static/js/main.b9b73ba4.js",
+    "main.js": "/pizza-dough-calculator/static/js/main.215362a3.js",
     "static/js/787.73e8403d.chunk.js": "/pizza-dough-calculator/static/js/787.73e8403d.chunk.js",
     "index.html": "/pizza-dough-calculator/index.html",
     "main.6a0cbb55.css.map": "/pizza-dough-calculator/static/css/main.6a0cbb55.css.map",
-    "main.b9b73ba4.js.map": "/pizza-dough-calculator/static/js/main.b9b73ba4.js.map",
+    "main.215362a3.js.map": "/pizza-dough-calculator/static/js/main.215362a3.js.map",
     "787.73e8403d.chunk.js.map": "/pizza-dough-calculator/static/js/787.73e8403d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6a0cbb55.css",
-    "static/js/main.b9b73ba4.js"
+    "static/js/main.215362a3.js"
   ]
 }
