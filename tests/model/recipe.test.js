@@ -1,6 +1,4 @@
-import BaseRecipe, {RecipeParameters} from "../../src/model/recipe";
-
-
+import BaseRecipe, {YeastType} from "../../src/model/recipe";
 
 describe('Recipe', () =>{
     let recipe = null
@@ -12,7 +10,8 @@ describe('Recipe', () =>{
             hydration: 0.68,
             salt: 0.025,
             amountOfWaterPerPizza: 100,
-            numberOfPizzas: 5
+            numberOfPizzas: 5,
+            yeastType: YeastType.DRY
         })
     })
     test('total water needed for the recipe', () => {
@@ -36,5 +35,27 @@ describe('Recipe', () =>{
     })
     test('weight per pizza', () => {
         expect(recipe.weightPerPizza()).toBe(recipe.totalWeight()/recipe.parameters.numberOfPizzas)
+    })
+    test('amount of yeast', () => {
+        expect(recipe.amountOfYeast()).toBe(0.0007)
+        const freshYeastRecipe = new BaseRecipe({
+            hydration: 0.68,
+            salt: 0.025,
+            amountOfWaterPerPizza: 100,
+            numberOfPizzas: 5,
+            yeastType: YeastType.FRESH
+        })
+        expect(freshYeastRecipe.amountOfYeast()).toBe(0.002)
+        const sourdoughYeastRecipe = new BaseRecipe({
+            hydration: 0.68,
+            salt: 0.025,
+            amountOfWaterPerPizza: 100,
+            numberOfPizzas: 5,
+            yeastType: YeastType.SOURDOUGH
+        })
+        expect(sourdoughYeastRecipe.amountOfYeast()).toBe(0.2)
+    })
+    test('total amount of yeast', () => {
+        expect(recipe.totalYeastNeeded()).toBe(recipe.amountOfYeast()*recipe.totalFlourNeeded())
     })
 })
